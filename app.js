@@ -7,3 +7,8 @@ export default app;
 dotenv.config({
   path: "./config/config.env",
 });
+
+// importing Routes
+import userRoute from "./routes/user.js";
+
+app.use("/api/v1", userRoute);
